@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+  
+    #top{
+        height: 60px;
+        background-color: rgb(83, 82, 82);
+        width: 100%;
+        color: white;
+        display: flex;
+       
+  align-items: center;
+
+    }#top img {
+ height: 100%;}#top h4 {
+  text-align: center;
+  margin: 0 auto; /* Center the heading horizontally */
+}
+
+#p{
+display: flex;    
+height: 100px;
+margin-top: 20px;
+width: 90%;
+margin: auto;
+margin-top:20px ;
+  
+}
+
+
+#p>img{
+    width: 200px;
+    height: 70%;
+}
+#p>div{
+    display: flex;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+#p>div>input{
+    width: 600px;
+}
+#p>div>select{
+    width: 200px;
+}#p>div>h4{
+    margin-left: 50px;
+}
+#p>div>h3{
+    margin-left: 80px;
+}
+.mega-menu-items{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#mega-menu-image{
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+
+    margin-top: 30px;
+}
+#mega-menu-image>img{
+ border-radius: 50%;
+ width: 200px;
+ height: 70%;
+}
+
+.topW{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+#watches{
+
+  height: 350px;
+  display: flex;
+
+}
+
+#ele{
+
+height: 420px;
+display: flex;
+
+}
+       </style>
+</head>
+<body>
+  <div id="nav">
+    <div id="top">
+        <h4>Track Your Order</h4> 
+    <image  src="data:image/png;base64,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"></image>
+   </div>
+   
+   <div id="p">
+    <img   src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/logo_170x_2x_88e71359-783c-47a9-964f-1784d9c5283a_170x@2x.png?v=1630576080" alt="">
+  <div >
+    
+    <input type="text" placeholder="Search...">
+      <select name="ok ">
+
+    <option value="All Catogery">All Catogery</option>
+    <option value="Accessories">Accessories</option>
+    <option value="Bluetooth">Bluetooth</option>
+    <option value="cable&charger">cable&charger</option>
+    <option value="camra">camra</option>
+    <option value="Car Accessories">Car Accessories</option>
+    <option value="Casual Shirt">Casual Shirt</option>
+    <option value="Formal Shirt">Formal Shirt</option>
+    <option value="Health">Health</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Home & Kitchen">Home & Kitchen"</option>
+    <option value="Home & Decor">Home & Decor</option>
+    <option value="Kids">Kids</option>
+    <option value="Beauty">Beauty</option>
+     </select>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA0CAYAAADfRPtlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMkSURBVGhD7ZjLaxRBEIerZ3zGJ0oEH0giSHII4inBCFFUREQDmnhQgif1rjeJF8V40z9APQQ8anJQEfGFGD0oCPGkEjFiIOjFiETIw922fj01ZIl5rNO1IbPMB8t09+509tuerqqOGe8gS2VMINeyJRNMO5lg2skE004mmHYywbRT9oIlKbbNxh1kalvJbG4is7aGaNEKorFhskN9ZL/2kP1wh+xAj3y6tKgKmso6CnZ3kNnaLCPTYz8/pPzzC2S/vZWR0qAmaOraKDzcyY1QRlii/zHZ771EIz+Jlqwis24bmS0H5N2I/IPTlO+9KT19VASdXPMt6fGXfn2VX9eIhgdlpICKSgrqz1LQeF4GIHmGJW9ITxdvQTyW4SleJaxcbpRyXa1kP92Xd6fHVO+j8MhtXtnVrp/rbCA7+Ma1NfGOothz8WNZrByw/U8o190iPcxzRVq6eAm6aCkBBY9lsXIx9sszyr+85Nqmaq9bVW38BDkVxLg9lwD8MJQfd21Te8xdNfET5DwHEC2nDCjFMPqLbF+08vF8mvgJIokzLhV4EN9v1kTzaeIXZFChAOQ5H0aGoqsxPOfyqK2EnyCXXw5O4l4sLrh/7Lc0dPASRG0JUKH4EN9vf2A+3dLYT5ALZ+DKL65QErFgKaeaQ65pB164qyZ+gnwqiEH5lYSg4ZyTBPb9xHxa+AnykQenAoDa8n8TtdnUSMGuy65dOJcmfkGGwZEnBrWlqdojvZmBXHj8kfQwT7u0dPEWxHkORx4HF87hiacUNF3kyLgyGpsMP47BznYKT74iWrhMBpmke3gW1M6DwfbTFBy8Lj2Gyy/bd4+T+Lsoz3EqcOdBBBTZc5PJdbWQ/dgtPR10T/Qb6t2pAIXzbGDPuceSVy5s6ZJRfUlVwRgEGxTO7n8yKL9QoTDIc0gFiJaFAcXUHC2ZZEkE/wHll6tQpv9TpZL0DjJF4Uq6mX9HyEAqBrKQ9mVuBItkSsnq/dJLxrwSBIWSubttfNacyJVJmJs9mACsnK8cmHcrGKMhB+atoBaZYNrJBNNOJph2MsG0kwmmnbIW/FOxnv4CtdEYflGSmRsAAAAASUVORK5CYII=" alt="">
+
+      <h4 id="login">Login/Sign-Up</4>
+<h3>Cart</h3>
+  </div>
+  </div>
+  </div> 
+  <div class="mega-menu-items">
+   <h3>Home</h3>
+   <h3>Mobile</h3>
+   <h3>Men</h3>
+   <h3>Macbook Sleeves</h3>
+   <h3>Messenger Bags</h3>
+   <h3>Eyewear Cases</h3>
+   <h3>Women</h3>
+   </div>
+<div style="height: 1px; background-color: rgb(203, 197, 197);"></div>
+   <div id="mega-menu-image">
+<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/category_538_256x_3dfa86a7-06aa-4900-8966-57468827bd91_256x.png?v=1613722689" alt="">
+   
+<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/new-shoes_300x.jpg?v=1617260455" alt="">
+<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/collections/choppingboard0_2400x_600x_dfeb4cae-a610-437f-aa57-a8794e5151af_300x.jpg?v=1612505566" alt="">
+
+
+<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/new-summer-collections-vector-design-best-fashion-brands-vintage-style-ad-poster-concept-90160906_300x.jpg?v=1613733019" alt="">
+<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/category_399_256x.png?v=1613716415" alt="">
+<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/category_300_256x.png?v=1613716415" alt="">
+
+</div >
+
+
+
+<div class="topW">
+
+    <h2 >Top Pickes On Smart Watches</h2>
+
+<div id="watches">
+
+</div>
+
+</div>
+
+<div class="topW">
+  <h2>Best of Electronics</h2>
+</div>
+<div id="ele">
+
+</div>
+
+<div style="width: 90%;margin: auto; height: 400px; margin-top: 50px;">
+<img style="height: 100%;width: 100%;" src="https://imagetolink.com/ib/WcsCtYcD27.png" alt="">
+</div>
+</body>
+</html>
+
+<script>
+
+
+
+/////////////
+ let bag =[];
+    let url="http://localhost:1212";
+    fetch(`${url}/watches`)
+    .then((res)=>res.json())
+    .then((data)=>{
+      bag=data;
+      console.log(data);
+      displayCard(bag);
+    });
+function displayCard(data){
+  document.querySelector("#watches").innerHtml=null;
+  data.forEach(function (elem){
+   let div=document.createElement("div")
+  
+ div.style="margin-left:10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;padding-left:5px"
+
+ let  imagePord=document.createElement("img")
+ imagePord.setAttribute("src",elem.thumbnail)
+ imagePord.style.height="50%"
+
+  let price=document.createElement("h2")
+  price.innerText=elem.price;
+  let des=document.createElement("p")
+  des.innerText=elem.description;
+  
+
+  div.append(imagePord,des,price);
+  document.querySelector("#watches").append(div);
+
+  });
+}
+/////////////////
+
+
+let ba =[];
+    let url2="http://localhost:1212";
+    fetch(`${url2}/ele`)
+    .then((res)=>res.json())
+    .then((data)=>{
+      ba=data;
+     
+      displayCar(ba);
+    });
+function displayCar(data){
+  document.querySelector("#ele").innerHtml=null;
+  data.forEach(function (elem){
+   let div=document.createElement("div")
+  
+ div.style="margin-left:10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;padding-left:5px"
+
+ let  imagePord=document.createElement("img")
+ imagePord.setAttribute("src",elem.thumbnail)
+ imagePord.style.height="50%"
+
+  let price=document.createElement("h2")
+  price.innerText=elem.price;
+  let des=document.createElement("p")
+  des.innerText=elem.description;
+  
+
+  div.append(imagePord,des,price);
+  document.querySelector("#ele").append(div);
+
+  });
+}
+</script>
