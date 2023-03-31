@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
     <style>
+        #category-container{
+    display: grid;;
+    grid-template-columns: repeat(4,1fr);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    gap: 20px 20px;
+    font-family: 'Trade Gothic LT Pro', sans-serif !important;
+    font-size: 14px;
+    margin-top: 50px;
+}
+#category-container>div:hover{
+    cursor: pointer;
+}
+
+#category-container img{
+    width: 150PX;
+    border-radius: 50%;
+    /* border: solid red; */
+    height: 150PX;
+}
+#Product-Container h2{
+    text-align: center;
+    font-family: 'Trade Gothic LT Pro', sans-serif !important;
+    margin: 50px 0px;
+}
+#category-container div:hover{
+    cursor: pointer;
+}
+hr {
+    border-bottom: 1px solid hsla(0,0%,74.9%,.5019607843137255);
+    margin: 0;
+    opacity: .2;
+}
 body{
  background-color: rgb(235, 224, 213);
 }
@@ -284,7 +327,7 @@ display: flex;
   </div>
   </div> 
   <div class="mega-menu-items">
-   <h3>Home</h3>
+   <h3 id="ho">Home</h3>
    <h3>Mobile</h3>
    <h3>Men</h3>
    <h3 id="mac">Macbook Sleeves</h3>
@@ -292,67 +335,19 @@ display: flex;
    <h3>Eyewear Cases</h3>
    <h3>Women</h3>
    </div>
-<div style="height: 1px; background-color: rgb(203, 197, 197);"></div>
-   <div class="mega-menu-image">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/1553060813428_Black-originnm80prcnt_500x_6ee61889-9682-436e-8776-766173b0823f_300x.jpg?v=1613717581" alt="">
-   
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/products/1580789688449_FABX-06__1_-originnm80prcnt_300x.jpg?v=1605872606" alt="">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/products/1594206423406_16_22_1006-originnm80prcnt_300x.jpg?v=1605630055" alt="">
-
-
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/products/1561123905149_76-originnm80prcnt_300x.jpg?v=1605762324" alt="">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/products/1584092188537_WhatsApp_Image_2020-03-13_at_12.34.42-originnm80prcnt_300x.jpg?v=1605871875" alt="">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/1599648708625_21_26_5f4349b6a5a38053503a7550707c5c37-originnm80prcnt_500x_c0ffe7c5-e0cc-4f64-8fbd-7a3bda97aac3_300x.jpg?v=1613718998" alt="">
-
-</div >
 
 
 
-<div class="topW">
-
-    <h2 >Top Pickes On Smart Watches</h2>
-
-<div id="watches">
 
 </div>
-
+<div id="Product-Container">
+    <div>
+        <h2>CASES & SLEEVES</h2>
+    </div>
+    <div id="category-container">
+        <!-- append all data here -->
+    </div>
 </div>
-
-<div class="topW">
-  <h2>Best of Electronics</h2>
-</div>
-<div id="ele">
-
-</div>
-
-<div style="width: 90%;margin: auto; height: 400px; margin-top: 50px;">
-<img style="height: 100%;width: 100%;" src="https://imagetolink.com/ib/WcsCtYcD27.png" alt="">
-</div>
-
-
-<div style="height: 1px; background-color: rgb(203, 197, 197); margin-top: 60px;"></div>
-   <div class="mega-menu-image">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/category_538_256x_3dfa86a7-06aa-4900-8966-57468827bd91_256x.png?v=1613722689" alt="">
-   
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/new-shoes_300x.jpg?v=1617260455" alt="">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/collections/choppingboard0_2400x_600x_dfeb4cae-a610-437f-aa57-a8794e5151af_300x.jpg?v=1612505566" alt="">
-
-
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/new-summer-collections-vector-design-best-fashion-brands-vintage-style-ad-poster-concept-90160906_300x.jpg?v=1613733019" alt="">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/category_399_256x.png?v=1613716415" alt="">
-<img src="https://cdn.shopify.com/s/files/1/0504/0940/6637/files/category_300_256x.png?v=1613716415" alt="">
-
-</div >
-
-
-<div style="width: 90%;margin: auto; height: 400px; margin-top: 50px;">
-  <img style="height: 100%;width: 100%;" src="https://imagetolink.com/ib/1MwhDtOD3l.png" alt="">
-  </div>
-
-
-
-
-
   <!--  -->
   <div class="reviews">
     <h2>HONEST REVIEWS. NOTHING ELSE.</h2>
@@ -609,6 +604,11 @@ let  mac=document.getElementById("mac");
 mac.addEventListener("click",()=>{
     window.location.href="./v.html";
 })
+
+let  ho=document.getElementById("ho");
+ho.addEventListener("click",()=>{
+    window.location.href="./home.html";
+})
 let lb=document.getElementById("login")
 login.addEventListener("click",()=>{
 window.location.href="./signup.html"
@@ -680,4 +680,78 @@ function displayCar(data){
 
   });
 }
+
+let container = document.getElementById("category-container");
+
+// fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-tech-products")
+// .then((res)=>{
+//     return res.json();
+// })
+// .then((res)=>{
+//     console.log(res)
+//     display(res.data)
+// })
+let data = [
+    {
+        img: "https://images.dailyobjects.com/marche/tmp/phone-cases.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
+        category: " PHONE CASES "
+    },
+    {
+        img: "https://images.dailyobjects.com/marche/icons/category/cases-sleeves-intermediate-image.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
+        category: "LAPTOP/MACKBOOK SLEEVES"
+    },
+    {
+        img: "https://images.dailyobjects.com/marche/icons/category/airpod-case-cover-updated.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
+        category: "AIRPODS CASE COVER "
+    },
+    {
+        img: "https://images.dailyobjects.com/marche/icons/category/ipad-new.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
+        category: "IPAD COVERS & SLEEVES New"
+    },
+    {
+        img: "https://images.dailyobjects.com/marche/icons/category/passport.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
+        category: "PASSPORT WALLETS"
+    },
+    {
+        img: "https://images.dailyobjects.com/marche/icons/category/eyewear-cases.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
+        category: "EYEWEAR CASES"
+    },
+    {
+        img: "https://images.dailyobjects.com/marche/icons/category/airtag-category-icon.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
+        category: "AIRTAG CASES"
+    }
+]
+display(data)
+function display(data) {
+    container.innerHTML = "";
+    data.forEach((element) => {
+        let card = document.createElement("div");
+        card.setAttribute = ("class", "card")
+        let img = document.createElement("img");
+        let h3 = document.createElement("h3");
+        img.src = element.img;
+        h3.textContent = element.category;
+        container.append(card);
+        card.append(img, h3)
+        card.addEventListener("click", () => {
+            localStorage.setItem("products", JSON.stringify(data))
+            window.location.href = "http://127.0.0.1:5500/productlist.html"
+        })
+    });
+}
+let logo = document.getElementById("logo")
+logo.addEventListener("click", () => {
+    window.location.href = "http://127.0.0.1:5500/index.html"
+})
+
+
+let cartcount = document.querySelector(".cartcount");
+
+let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+if (cartdata.length === 0) {
+    cartcount.style.display = "none"
+}
+cartcount.innerText = cartdata.length;
 </script>
+</body>
+</html>
