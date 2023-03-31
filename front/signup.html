@@ -345,7 +345,7 @@ try {
         body:JSON.stringify(obj)
     })
     if(signup_res.ok){
-        alert("Register Succecfully");
+        alert("Register Succecfully Now You  Can Login");
        
     }
 } catch (error) {
@@ -374,7 +374,7 @@ async function login(){
         })
         if(res.ok){
             let token= await res.json();
-            localStorage.setItem("token",token.token)
+           localStorage.setItem("token",token.token)
             alert("Login Succecfully");
             window.location.href="home.html"
         }else{

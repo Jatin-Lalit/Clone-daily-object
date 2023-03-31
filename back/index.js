@@ -8,25 +8,9 @@ const{connection}=require("./connect.js");
 const jwt = require('jsonwebtoken');
 const {UserModel}=require("./model/user.model.js")
 const bcrypt=require("bcrypt");
-
+const {auth}=require("./middleware/auth.js")
 app.use(express.json());
 app.use(cors())
-
-
-
-
-app.get("/watches",(req,res)=>{
-let data=JSON.parse(fs.readFileSync("./db.json","utf-8"))
-
-res.send(data.appleBands)
-
-})
-app.get("/ele",(req,res)=>{
-    let data=JSON.parse(fs.readFileSync("./db.json","utf-8"))
-    
-    res.send(data.ele)
-    
-    })
 
 /////////////
 ///login  & registration
@@ -63,7 +47,8 @@ app.post("/login",async (req,res)=>{
 bcrypt.compare(password,user.password, (err, result)=> {
             if( result){
                 res.status(200).send({"msg":"login done","token":jwt.sign({ UserId: user._id }, 'project')})
-                console.log(user)
+               
+              
             }else{
                 res.send("wrong pass")
             }
@@ -77,6 +62,22 @@ bcrypt.compare(password,user.password, (err, result)=> {
 }
             
 })
+
+
+app.get("/watches",(req,res)=>{
+let data=JSON.parse(fs.readFileSync("./db.json","utf-8"))
+
+res.send(data.appleBands)
+
+})
+app.get("/ele",(req,res)=>{
+    let data=JSON.parse(fs.readFileSync("./db.json","utf-8"))
+    
+    res.send(data.ele)
+    
+    })
+
+
 //////////////////////////////
 
 
