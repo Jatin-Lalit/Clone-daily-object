@@ -279,7 +279,7 @@ display: flex;
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA0CAYAAADfRPtlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMkSURBVGhD7ZjLaxRBEIerZ3zGJ0oEH0giSHII4inBCFFUREQDmnhQgif1rjeJF8V40z9APQQ8anJQEfGFGD0oCPGkEjFiIOjFiETIw922fj01ZIl5rNO1IbPMB8t09+509tuerqqOGe8gS2VMINeyJRNMO5lg2skE004mmHYywbRT9oIlKbbNxh1kalvJbG4is7aGaNEKorFhskN9ZL/2kP1wh+xAj3y6tKgKmso6CnZ3kNnaLCPTYz8/pPzzC2S/vZWR0qAmaOraKDzcyY1QRlii/zHZ771EIz+Jlqwis24bmS0H5N2I/IPTlO+9KT19VASdXPMt6fGXfn2VX9eIhgdlpICKSgrqz1LQeF4GIHmGJW9ITxdvQTyW4SleJaxcbpRyXa1kP92Xd6fHVO+j8MhtXtnVrp/rbCA7+Ma1NfGOothz8WNZrByw/U8o190iPcxzRVq6eAm6aCkBBY9lsXIx9sszyr+85Nqmaq9bVW38BDkVxLg9lwD8MJQfd21Te8xdNfET5DwHEC2nDCjFMPqLbF+08vF8mvgJIokzLhV4EN9v1kTzaeIXZFChAOQ5H0aGoqsxPOfyqK2EnyCXXw5O4l4sLrh/7Lc0dPASRG0JUKH4EN9vf2A+3dLYT5ALZ+DKL65QErFgKaeaQ65pB164qyZ+gnwqiEH5lYSg4ZyTBPb9xHxa+AnykQenAoDa8n8TtdnUSMGuy65dOJcmfkGGwZEnBrWlqdojvZmBXHj8kfQwT7u0dPEWxHkORx4HF87hiacUNF3kyLgyGpsMP47BznYKT74iWrhMBpmke3gW1M6DwfbTFBy8Lj2Gyy/bd4+T+Lsoz3EqcOdBBBTZc5PJdbWQ/dgtPR10T/Qb6t2pAIXzbGDPuceSVy5s6ZJRfUlVwRgEGxTO7n8yKL9QoTDIc0gFiJaFAcXUHC2ZZEkE/wHll6tQpv9TpZL0DjJF4Uq6mX9HyEAqBrKQ9mVuBItkSsnq/dJLxrwSBIWSubttfNacyJVJmJs9mACsnK8cmHcrGKMhB+atoBaZYNrJBNNOJph2MsG0kwmmnbIW/FOxnv4CtdEYflGSmRsAAAAASUVORK5CYII=" alt="">
 
       <button id="login" style="margin-left: 50px;">Login/SignUp</button>
-<h3>Cart</h3>
+<h3  id="cart">Cart</h3>
   </div>
   </div>
   </div> 
@@ -604,7 +604,10 @@ let  track=document.getElementById("track");
 track.addEventListener("click",()=>{
     window.location.href="https://www.delhivery.com/";
 })
-
+let  cart=document.getElementById("cart");
+cart.addEventListener("click",()=>{
+    window.location.href="./cart.html";
+})
 let  mac=document.getElementById("mac");
 mac.addEventListener("click",()=>{
     window.location.href="./v.html";
