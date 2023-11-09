@@ -30,8 +30,6 @@ To explore the project, clone the repository and open the index.html file in you
 
 Contributions or feedback are not expected as this project is for demonstrative purposes.
 
-## Contact
 
-For inquiries or discussions related to this project, feel free to contact me at [your email].
 
 Thank you for your interest in this E-commerce clone!
